@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 body {
@@ -11,11 +12,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: gray;
+    background-image: linear-gradient(to right, #2c3e50, #4ca1af);
+
 }
 
 .container {
-    background-color: rgb(142, 98, 98);
     height: 100vmin;
     width: 93vmin;
     border-radius: 15px;
@@ -47,6 +48,8 @@ hr {
     padding: 1%;
     width: 65%;
     font-size: 4vmin;
+    color: black;
+    text-shadow: none;
 }
 
 .flexing {
@@ -106,10 +109,16 @@ button {
     border: none;
     outline: none;
     cursor: pointer;
+    color: rgb(223, 223, 223);
+    background: transparent;
+    box-shadow: 0 0 5px 0 black;
+    transition: box-shadow 0.2s ease-in-out;
+    letter-spacing: 0.1rem;
+    font-weight: bolder;
 }
 
 button:hover {
-    background-color: aliceblue;
+    box-shadow: 0 0 10px 0 black;
 }
 
 input:not(input[type='text']) {
