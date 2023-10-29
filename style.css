@@ -57,6 +57,20 @@ hr {
     justify-content: space-between;
     align-items: center;
     margin-block: 4%;
+    position: relative;
+}
+
+.flexing i {
+    position: absolute;
+    right: 1%;
+    cursor: pointer;
+    color: black;
+    transform: scale(0.8);
+    transition: transform 0.1s ease;
+}
+
+.flexing i:hover {
+    transform: scale(0.9);
 }
 
 .optionsbox {
