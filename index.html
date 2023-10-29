@@ -17,6 +17,7 @@
       <div class="flexing" id="pwid">
         <label for="pw">Password: </label>
         <input type="text" id="pw">
+        <i class="fa-regular fa-copy" onclick="navigator.clipboard.writeText(pw.value);"></i>
       </div>
       <div class="pwlengthclass">
         <label for="pwlength">Length: </label>
@@ -45,5 +46,6 @@
     <button>Generate</button>
   </div>
 </body>
+<script src="https://kit.fontawesome.com/8e5e768940.js" crossorigin="anonymous"></script>
 
 </html>
