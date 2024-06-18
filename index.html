@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Password Generator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="./assets/key-solid.svg" type="image/svg+xml">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <span>Random Password Generator By Rohit <sup>&copy;</sup></span>
+    <hr>
+    <div class="passwordText">
+      <div class="flexing" id="pwid">
+        <label for="pw">Password: </label>
+        <input type="text" id="pw">
+        <i class="fa-regular fa-copy"
+          onclick="navigator.clipboard.writeText(pw.value);alert('Password Copied!!!');"></i>
+      </div>
+      <div class="pwlengthclass">
+        <label for="pwlength">Length: </label>
+        <input type="range" max="20" value="0" id="pwlength">
+        <span id="value_range">00</span>
+      </div>
+      <div class="optionsbox">
+        <div class="flexing">
+          <label for="uc">Contains UpperCase Letters</label>
+          <input type="checkbox" id="uc">
+        </div>
+        <div class="flexing">
+          <label for="lc">Contains LowerCase Letters</label>
+          <input type="checkbox" id="lc">
+        </div>
+        <div class="flexing">
+          <label for="num">Contains Numbers</label>
+          <input type="checkbox" id="num">
+        </div>
+        <div class="flexing">
+          <label for="spc">Contains Special Symbols</label>
+          <input type="checkbox" id="spc">
+        </div>
+      </div>
+    </div>
+    <button>Generate</button>
+  </div>
+</body>
+<script src="https://kit.fontawesome.com/8e5e768940.js" crossorigin="anonymous"></script>
+
+</html>

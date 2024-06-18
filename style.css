@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #2c3e50, #4ca1af);
+
+}
+
+.container {
+    height: 100vmin;
+    width: 93vmin;
+    border-radius: 15px;
+    padding: 1.5%;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 10px 0 black;
+}
+
+span {
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 5vmin;
+    white-space: nowrap;
+    margin-block: 4%;
+}
+
+hr {
+    border: 2px solid black;
+}
+
+.passwordText {
+    font-size: 4.5vmin;
+    font-weight: bold;
+    margin-block: 3vh;
+}
+
+#pw {
+    padding: 1%;
+    width: 65%;
+    font-size: 4vmin;
+    color: black;
+    text-shadow: none;
+}
+
+.flexing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 4%;
+    position: relative;
+}
+
+.flexing i {
+    position: absolute;
+    right: 1%;
+    cursor: pointer;
+    color: black;
+    transform: scale(0.8);
+    transition: transform 0.1s ease;
+}
+
+.flexing i:hover {
+    transform: scale(0.9);
+}
+
+.optionsbox {
+    width: 87%;
+    margin: auto;
+    font-size: 4.5vmin;
+}
+
+input[type='text'] {
+    border-radius: 7px;
+    border: none;
+    outline: none;
+}
+
+input[type='range'] {
+    width: 65%;
+}
+
+input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+}
+
+#pwid {
+    width: 87%;
+    margin: auto;
+}
+
+.pwlengthclass {
+    font-size: 4.5vmin;
+    width: 87%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    height: 13%;
+    font-size: 5vmin;
+    border-radius: 15px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: rgb(223, 223, 223);
+    background: transparent;
+    box-shadow: 0 0 5px 0 black;
+    transition: box-shadow 0.2s ease-in-out;
+    letter-spacing: 0.1rem;
+    font-weight: bolder;
+}
+
+button:hover {
+    box-shadow: 0 0 10px 0 black;
+}
+
+input:not(input[type='text']) {
+    cursor: pointer;
+}
+
+
+
+@media only screen and (min-width:900px) {
+
+    .container {
+        height: 80vmin;
+        width: 80vmin;
+    }
+
+    span {
+        font-size: 4vmin;
+    }
+
+    .passwordText {
+        font-size: 3vmin;
+    }
+
+    #pw {
+        width: 70%;
+        font-size: 2vmin;
+    }
+
+    .optionsbox {
+        font-size: 3.3vmin;
+    }
+
+    #pwid {
+        font-size: 3.3vmin;
+    }
+
+    button {
+        height: 11%;
+        font-size: 4.3vmin;
+    }
+
+    .pwlengthclass {
+        font-size: 3.3vmin;
+    }
+}
