@@ -3,33 +3,27 @@
 
 ## Table of Contents
 - [Preview](#preview)
-- [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
 - [Features](#features)
-- [How it Works](#how-it-works)
+- [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
-- [Author](#author)
+- [Contributing](#contributing)
 
 ## Preview
 ![preview.png](./assets/preview.png?raw=true)
-
-## Technologies Used
-- HTML
-- CSS
-- JavaScript
-
-## Getting Started
-To use the Random Password Generator, open the `index.html` file in a web browser.
 
 ## Features
 - Generate random passwords with options for length and character types.
 - Copy generated passwords to the clipboard with a single click.
 - Responsive design for a seamless user experience.
 
-## How it Works
-The generator uses a combination of uppercase letters, lowercase letters, numbers, and special symbols to create random and secure passwords. Users can customize the password length and choose which types of characters to include.
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/rohityadav-sas/Random-Password-Generator
+   ```
+
+2. Open ```index.html``` in your web browser.
 
 ## Usage
 1. Adjust the password length using the slider.
@@ -37,12 +31,11 @@ The generator uses a combination of uppercase letters, lowercase letters, number
 3. Click the "Generate" button to create a random password.
 4. Click the copy icon to copy the generated password to the clipboard.
 
-## Contributing
-Contributions are not applicable for this repository as it's a static password generator.
-
 ## License
-This project is licensed under the [MIT License](LICENSE).
 
-## Author
-- **Rohit**
+This project is licensed under the ISC License. See the [LICENSE](./LICENSE) file for details.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
 
